@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        
+        <div id="scoreBoard">
+            Score: <span id="score">0</span> | High Score: <span id="highScore">0</span>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="restartBtn">Restart Game</button>
+            <div class="mobile-controls">
+                <div class="control-row">
+                    <button id="upBtn">↑</button>
+                </div>
+                <div class="control-row">
+                    <button id="leftBtn">←</button>
+                    <button id="rightBtn">→</button>
+                </div>
+                <div class="control-row">
+                    <button id="downBtn">↓</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <p>Use arrow keys or swipe on mobile to control the snake.</p>
+            <p>Collect red food to grow and increase your score.</p>
+            <p>Avoid hitting walls or your own tail!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
